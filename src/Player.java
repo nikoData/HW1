@@ -7,12 +7,12 @@ public class Player {
         this.gameDeck =  new Deck(false);
         this.prizeDeck =  new Deck(false);
     }
-    public Card drawCard(){//                       ****not finished
+    public Card drawCard(){//                    ****not finished
         return this.gameDeck.removeTopCard();
     }
 
-    public boolean outOfCards(){
-        return this.gameDeck.isEmpty();
+    public boolean outOfCards(){                                        // not sure
+        return this.gameDeck.isEmpty() && this.prizeDeck.isEmpty();
     }
 
     @Override

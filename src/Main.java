@@ -7,6 +7,10 @@ public class Main {
     public static Random rnd;
 
     public static void main(String[] args) throws FileNotFoundException {
+        Card p = new Card(4,Shape.HEARTS);
+        System.out.println(p.toString());
+
+
         String filePath = args[0];
         File file = new File(filePath);
         Scanner scanner = new Scanner(file);
@@ -23,6 +27,8 @@ public class Main {
             String winner = game.start();
             System.out.println("+++++++++++++++++++++++++++++++++++++++");
             System.out.println(winner + " won the game!\n\n");
+
+
         }
     }
-}
+
